@@ -21,7 +21,7 @@ function creaCard(){
         }
     )
     .catch(
-        errore => msgErrore.style.display = "block"
+        () => msgErrore.style.display = "block"
     )
     .then(
         json => img.src = json.message
