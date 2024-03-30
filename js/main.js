@@ -24,9 +24,7 @@ function creaCard(){
         errore => msgErrore.style.display = "block"
     )
     .then(
-        json => {
-            img.src = json.message;
-        }
+        json => img.src = json.message
     );
     img.alt = "Cane";
     card.appendChild(img);
